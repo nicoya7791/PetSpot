@@ -1,0 +1,47 @@
+caption {
+  font-weight: bold;
+  padding: 1em;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th,
+tfoot {
+  background-color: #242936;
+  color: orange;
+}
+
+tr:nth-child(even) {
+  background-color: #fefdf8;
+}
+.anchor {
+  color: #ff6f61;
+  text-decoration: none;
+}
+.anchor:hover {
+  color: white;
+}
+
+.section-table {
+  padding: 3rem;
+  margin-bottom: 2em;
+}
+
+/* video section */
+.section-videos {
+  /* background-color: #fefdf8; */
+}
+
+ul {
+  background-color: aqua;
+  display: grid;
+  justify-content: center;
+  align-content: space-around;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding: 1rem;
+}
