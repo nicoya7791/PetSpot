@@ -35,7 +35,6 @@ tr:nth-child(even) {
 video section 
 =======================*/
 .section-videos {
-  border: 2px solid yellow;
   padding: 2rem;
 }
 
@@ -47,7 +46,6 @@ video section
 
 ul {
   display: grid;
-  border: 3px solid #ff6f61;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   align-content: center;
@@ -56,7 +54,6 @@ ul {
   gap: 10px;
 }
 ul li {
-  border: 1px solid blue;
   min-width: 300px;
   max-width: 500px;
 }
