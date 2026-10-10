@@ -17,15 +17,8 @@
     />
     <meta name="date created" content="2026-09-27" />
     <meta name="last updated" content="2026-09-27" />
-    <style>
-      html {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        font-size: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="about.css" />
   </head>
   <!-- Curiosity: the about page I experimented with deferent font and page structures specially how to display images, different ways to link page component. 
 Connections: The about page uses a ref attribute to link back to home page .
@@ -34,22 +27,21 @@ Christian World View: The page content expresses the virtues of compassion and c
 
  -->
   <body>
-    <header style="display: flex; align-items: center; justify-content: space-around; background-color: #F8F9FA;" >
-        <div style="display: flex; align-items: center; gap: 1rem;">
+    <header>
+        <div class="logo">
              <a href="https://www.flaticon.com/free-icons/dog-food"><img src="images/dog.png" alt="Pet Spot Logo" style="width: 80px; height: 50px;" /></a>
             <a href="index.html">Pet Spot</a>
         </div>
-            <nav style="display: flex; gap: 1rem;">
+        <nav  class="navbar">
                 <a href="index.html">Our Dogs</a>
                 <a href="CareTips.html">Care Tips</a>
                 <a href="About.html">About Us</a>
-            </nav>
+        </nav>
         </div>
     </header>
-    <main style="display: flex; flex-direction: column; align-items: center;
-     gap: 2rem; padding: 2rem; margin: 0 auto; max-width: 800px;">
+    <main>
       <section>
-        <img src="images/hero.jpg" height="400" width="600" alt="Hero image" />
+        <img src="images/about_hero.jpg" height="400" width="600" alt="Hero image" />
       </section>
       <section>
         <h2>About Pet Spot</h2>
@@ -77,18 +69,17 @@ Christian World View: The page content expresses the virtues of compassion and c
     <strong>Back to <a href="index.html">Home</a></strong>
 
     </main>
-    <footer style="display: flex; align-items: center; justify-content: space-between; padding: 2rem; margin-top: 6rem; background-color: #f1f1f1;">
+    <footer>
         <div>
             <p>&copy; 2026 Pet Spot. for animal lovers.</p>
             <p>Email: hello@petSpot.example</p>
             <p>phone: (123) 456-7890</p>
         </div>
-        <div style="display: flex; gap: 1rem;">
-            <a href="index.html">Our Dogs</a>
+        <nav class="footnav" aria-label="footer navigation">
+            <a href="#dogs">Our Dogs</a>
             <a href="CareTips.html">Care Tips</a>
             <a href="About.html">About Us</a>
-        </div>
-      
+        </nav> 
     </footer>
   </body>
 </html>

@@ -1,0 +1,114 @@
+/* 1. Use a more intuitive box-sizing model */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 5. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 6. Create a root stacking context and set smooth page defaults */
+body {
+  background-color: #f8f2eb;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+main {
+  padding: 3rem;
+}
+/* nav bar css */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fefdf8;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  width: 50%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* footer style */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  height: 200px;
+}
+
+.footnav {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  width: 50%;
+  align-items: center;
+}
+.footnav a {
+  text-decoration: none;
+}
+
+footer * {
+  color: white;
+}

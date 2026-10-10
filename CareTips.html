@@ -17,44 +17,11 @@
     />
     <meta name="date created" content="2026-09-27" />
     <meta name="last updated" content="2026-09-27" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="caretips.css" />
     <!-- experimented with style tags
      i hoping to put all styles in a separate file next topic to make it more organized` -->
-    <style>
-      html {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        font-size: 20px;
-      }
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-      tr {
-        text-align: left;
-        padding: 8px;
-        height: 50px;
-      }
-      th{
-        background-color: #4caf50;
-        color: white;
-        padding: 8px;
-        font-weight: bold;
-        font-size: 16px;
-      }
-      td {
-        padding: 10px;
-        font-size: 14px;
-      }
-      header {
-        background-color: #F8F9FA;
-      }
-      tfoot {
-        background-color: #4caf50;
-        color: white;
-      }
-      
-    </style>
+    
   </head>
   <body>
     <!-- Curiosity: I explored ways to organize care tips across web pages on topics such as daily nutrition, behavioral training, and preventive care, making information easy for users to find and remember. I also experimented with different layouts for presenting this content. I experimented with separating the shared code between pages and injecting it with the w3.js library.
@@ -62,16 +29,16 @@ Connections: This page links to related pages, creating a clear flow of informat
 Create value: The website supports new dog owners by providing essential information and connecting them with useful resources.
 Christian Worldview Reflection: This page reflects a Christian worldview by promoting faithful stewardship of God's creation and encouraging pet owners to provide animals in their care with loving and responsible protection.
 -->
-    <header style="display: flex; align-items: center; justify-content: space-around;" >
-        <div style="display: flex; align-items: center; gap: 1rem;">
-            <a href="https://www.flaticon.com/free-icons/dog-food"><img src="images/dog.png" alt="Pet Spot Logo" style="width: 80px; height: 50px;" /></a>
+    <header>
+        <div class="logo">
+             <a href="https://www.flaticon.com/free-icons/dog-food"><img src="images/dog.png" alt="Pet Spot Logo" style="width: 80px; height: 50px;" /></a>
             <a href="index.html">Pet Spot</a>
         </div>
-            <nav style="display: flex; gap: 3rem; justify-content: space-between;">
+        <nav  class="navbar">
                 <a href="index.html">Our Dogs</a>
                 <a href="CareTips.html">Care Tips</a>
                 <a href="About.html">About Us</a>
-            </nav>
+        </nav>
         </div>
     </header>
     <!-- main page content -->
@@ -271,25 +238,17 @@ Christian Worldview Reflection: This page reflects a Christian worldview by prom
         </ul>
       </section>
     </main>
-    <footer
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem;
-        background-color: #f1f1f1;
-      "
-    >
+    <footer>
       <div>
-        <p>&copy; 2026 Pet Spot. for animal lovers.</p>
-        <p>Email: hello@petSpot.example</p>
-        <p>phone: (123) 456-7890</p>
-      </div>
-      <div style="display: flex; gap: 1rem">
-        <a href="index.html">Our Dogs</a>
-        <a href="CareTips.html">Care Tips</a>
-        <a href="About.html">About Us</a>
-      </div>
+            <p>&copy; 2026 Pet Spot. for animal lovers.</p>
+            <p>Email: hello@petSpot.example</p>
+            <p>phone: (123) 456-7890</p>
+        </div>
+        <nav class="footnav" aria-label="footer navigation">
+            <a href="#dogs">Our Dogs</a>
+            <a href="CareTips.html">Care Tips</a>
+            <a href="About.html">About Us</a>
+        </nav>
     </footer>
   </body>
 </html>

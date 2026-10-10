@@ -17,6 +17,8 @@
     />
     <meta name="date created" content="2026-09-27" />
     <meta name="last updated" content="2026-09-27" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <!-- The home page Assessed different page layouts and page structures using image placeholders.
 Connections: The pages use a ref attribute to connect and facilitate navigation to the contact page and care tips.
@@ -25,69 +27,72 @@ Christian World View: The page content expresses the virtues of compassion and c
  -->
 
   <body>
-   <header style="display: flex; align-items: center; justify-content: space-around; background-color: #F8F9FA;" >
-        <div style="display: flex; align-items: center; gap: 1rem;">
-            <a href="https://www.flaticon.com/free-icons/dog-food"><img src="images/dog.png" alt="Pet Spot Logo" style="width: 80px; height: 50px;" /></a>
+   <header>
+        <div class="logo">
+            <a href="https://www.flaticon.com/free-icons/dog-food" target="_blank"><img src="images/dog.png" alt="Pet Spot Logo" style="width: 80px; height: 50px;" /></a>
             <a href="index.html">Pet Spot</a>
         </div>
-            <nav style="display: flex; gap: 1rem;">
+        <nav class="navbar">
                 <a href="index.html">Our Dogs</a>
                 <a href="CareTips.html">Care Tips</a>
                 <a href="About.html">About Us</a>
-            </nav>
+        </nav>
         </div>
     </header>
     <main>
         <!-- this section is the her section contains message on the left and picture onthe right -->
-        <section style="display: flex; align-items: center; justify-content: space-between; padding: 2rem; gap: 2rem;" id="dogs">
-            <div>
-                <h1>Welcome to Pet Spot</h1>
-                <h2>Beautiful dog happy life</h2>
-                <p>We have a variety of breeds available for adoption,
-                     including Pit Bulls, Golden Retrievers, and other popular breeds.</p>
-                <button style="background-color: #007bff; color: white; border: none; padding: 1rem; cursor: pointer;">Adopt a Dog</button>
+        <section class="hero-section" aria-label="hero section">
+            <div class="hero-text">
+                <h1> <bold>Find Your new </bold><span>Best Friend</span></h1>
+                <p>Every pet deserves a loving home.
+                 We connect shelter animals with caring owners through an easy,
+                  transparent, and joyful adoption process.</p>
+                <a class="btn" href="index.html">Adopt a Dog</a>
             </div>
-            <img src="https://placehold.co/400x200" alt="Dogs available for adoption"/>
+            <img class="hero-image" src="images/home_hero.jpg"alt="Dog photo for hero section"/>
         </section>
         <!-- this section present main pages of the site in a card format -->
-        <section style="display: flex; justify-content: space-around; padding: 2rem; gap: 2rem;" id="tips">
-            <div>
-                <img src="https://placehold.co/100x100" alt="dog picture">
-                <div>
+        <section class="cards-section" aria-label="cards section">
+            <div class="cards-home">
+                <img class="card-image" src="images/card1.jpg" alt="dog picture">
+                <div class="card-item">
                     <h4><b>Our Dogs</b></h4>
-                    <p>Each dog is unique and brings their own personality to your home.</p>
+                    <p>Each dog is unique and brings their own personality to your home.
+                        Stop by to meet them in person and find your perfect match
+                    </p>
                 </div>
-                <button>Explore Our Dogs </button>
+               <a class="btn">Explore Our Dogs </a>
             </div>
-            <div>
-                <img src="https://placehold.co/100x100" alt="Ideas picture">
-                <div>
+            <div class="cards-home">
+                <img class="card-image" src="images/card2.jpg" alt="Ideas picture">
+                <div class="card-item">
                     <h4><b>Care Tips</b></h4>
-                    <p>Get expert advice on dog care, nutrition, training and more.</p>
+                    <p>Get expert advice on dog care, nutrition, training, and more to keep 
+                        your pup happy and healthy every step of the way.</p>
                 </div>
-                <a href="CareTips.html"><button>View Care Tips</button></a>
+                <a class="btn" href="CareTips.html">View Care Tips</a>
             </div>
-            <div>
-                <img src="https://placehold.co/100x100" alt="team picture">
-                <div>
+            <div class="cards-home">
+                <img class="card-image card-tilted" src="images/card3.jpg"alt="team picture">
+                <div class="card-item">
                     <h4><b>About Us</b></h4>
-                    <p>Learn more about our team and mission. Our values and Story.</p>
+                    <p>Learn more about our team and mission. Discover what drives us every day and the people behind the passion.</p>
                 </div>
-                <a href="About.html"><button>Our Story</button></a>
+                <a class="btn" href="About.html">Our Story</a>
             </div>
         </section>
     </main>
-    <footer style="display: flex; align-items: center; justify-content: space-between; padding: 2rem; background-color: #f1f1f1;">
+    <footer>
         <div>
             <p>&copy; 2026 Pet Spot. for animal lovers.</p>
             <p>Email: hello@petSpot.example</p>
             <p>phone: (123) 456-7890</p>
         </div>
-        <div style="display: flex; gap: 1rem;">
+        <nav class="footnav" aria-label="footer navigation">
             <a href="#dogs">Our Dogs</a>
             <a href="CareTips.html">Care Tips</a>
             <a href="About.html">About Us</a>
-        </div>
+        </nav>
     </footer>
   </body>
 </html>
