@@ -31,17 +31,42 @@ tr:nth-child(even) {
   margin-bottom: 2em;
 }
 
-/* video section */
+/*==================== 
+video section 
+=======================*/
 .section-videos {
-  /* background-color: #fefdf8; */
+  border: 2px solid yellow;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  background-color: aqua;
   display: grid;
+  border: 3px solid #ff6f61;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
-  align-content: space-around;
-  grid-template-columns: auto auto;
-  gap: 3rem;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+ul li {
+  border: 1px solid blue;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+iframe {
+  width: 100%;
+  padding: 2px;
+}
+
+ul li p {
+  color: #333;
   padding: 1rem;
 }
