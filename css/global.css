@@ -1,4 +1,6 @@
-/* 1. Use a more intuitive box-sizing model */
+/*================================================= 
+this css files in ment to apply to all pagesin the project
+====================================================== */
 
 *,
 *::before,
@@ -53,9 +55,9 @@ body {
 main {
   padding: 3rem;
 }
-/* ====================
-nav bar css 
-==============
+/* ===========================
+nav bar css shared with all pages
+=================================
 */
 header {
   display: flex;
@@ -90,7 +92,13 @@ header a {
   color: #333;
 }
 
-/* footer style */
+.navbar a:hover {
+  color: orangered;
+}
+
+/* ==============================
+footer style 
+============================*/
 
 footer {
   display: flex;

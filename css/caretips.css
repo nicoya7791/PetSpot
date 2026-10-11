@@ -1,3 +1,4 @@
+/* table caption */
 caption {
   font-weight: bold;
   padding: 1em;
@@ -9,23 +10,28 @@ th {
   padding: 8px;
 }
 
+/* add backgroun color and font color to header and footer of table */
 th,
 tfoot {
   background-color: #242936;
   color: orange;
 }
 
+/* apply background to even rows */
 tr:nth-child(even) {
   background-color: #fefdf8;
 }
-.rowcolor {
-  background-color: azure;
-}
+
+/* =================
+achor tag style and add bounce up motion on hover 
+anchor located in the footer of table
+========================*/
 .anchor {
   color: #ff6f61;
   text-decoration: none;
   display: inline-block;
 }
+
 @keyframes anchor-bounce {
   0%,
   100% {
@@ -57,9 +63,18 @@ video section
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
+/* this is just for demostration of especificity
+it should be override by the inline style */
 #myspan {
   color: blue;
 }
+
+/*=============================================
+ not sure if adding iframe in list items was a good idea
+  either way, display vidos on a grid layout and the content inside the cell grid
+  is style with flex css
+  ======================================*/
 
 ul {
   display: grid;
@@ -70,6 +85,7 @@ ul {
   align-items: center;
   gap: 10px;
 }
+
 ul li {
   min-width: 300px;
   max-width: 500px;
