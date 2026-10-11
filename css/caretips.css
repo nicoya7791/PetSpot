@@ -18,12 +18,26 @@ tfoot {
 tr:nth-child(even) {
   background-color: #fefdf8;
 }
+.rowcolor {
+  background-color: azure;
+}
 .anchor {
   color: #ff6f61;
   text-decoration: none;
+  display: inline-block;
+}
+@keyframes anchor-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 .anchor:hover {
   color: white;
+  animation: anchor-bounce 1s;
 }
 
 .section-table {
@@ -42,6 +56,9 @@ video section
   text-align: center;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+#myspan {
+  color: blue;
 }
 
 ul {
