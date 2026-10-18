@@ -50,6 +50,8 @@ body {
   font-family: "Arial", sans-serif;
   min-height: 100vh;
   line-height: 1.5;
+  /* added respoinsive typograpy (min, optimous, max) */
+  font-size: clamp(1rem, calc(2vw + 0.75rem), 1.25rem);
 }
 
 main {
@@ -69,6 +71,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  flex-wrap: wrap;
 }
 header a {
   text-decoration: none;
@@ -83,6 +86,7 @@ header a {
 .navbar {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 4rem;
   width: 50%;
 }
@@ -104,9 +108,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: black;
   padding: 1rem 2rem;
-  height: 200px;
+  width: 100%;
 }
 
 .footnav {
@@ -122,4 +127,15 @@ footer {
 
 footer * {
   color: white;
+}
+
+.myheader {
+  container-type: inline-size;
+  container-name: myhead;
+}
+/* =============================== */
+@container myhead (width > 700px) {
+  header {
+    background-color: red;
+  }
 }

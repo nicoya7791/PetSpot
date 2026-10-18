@@ -1,3 +1,4 @@
+/* -------Custom property ----------*/
 @property --myColor {
   syntax: "<color>";
   inherits: true;
@@ -25,7 +26,12 @@
   height: 100%;
   object-fit: cover;
 }
+/*------- adds hue on hover to the images-------*/
+img:hover {
+  filter: hue-rotate(90deg);
+}
 
+/* --------using google fonts--------- */
 .card h4 {
   font-family: "Edu QLD Hand", cursive;
   font-optical-sizing: auto;
