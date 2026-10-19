@@ -90,14 +90,17 @@ card section
 }
 
 .card-image {
-  width: 90%;
+  width: 80%;
   height: 300px;
   border-radius: 10px;
-  transition: width 2s;
+  transition: width 1s;
+}
+.card-item {
+  width: 80%;
 }
 
 .card-image:hover {
-  width: 95%;
+  width: 360px;
   border: 2px solid red;
 }
 .card-tilted {

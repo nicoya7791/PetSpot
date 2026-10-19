@@ -49,6 +49,7 @@ body {
   color: #333;
   font-family: "Arial", sans-serif;
   min-height: 100vh;
+  padding: 10px;
   line-height: 1.5;
   /* added respoinsive typograpy (min, optimous, max) */
   font-size: clamp(1rem, calc(2vw + 0.75rem), 1.25rem);
