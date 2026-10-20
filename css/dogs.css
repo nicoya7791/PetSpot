@@ -62,3 +62,23 @@ img:hover {
   background-color: #f75c4e;
   transform: translateX(3px);
 }
+
+/* ----------Form CSS----------*/
+
+/* form section center the form on page */
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  gap: 10px;
+  padding: 20px;
+  background-color: #fefdf8;
+}
+
+form p label input textarea button {
+  max-width: 800px;
+  width: 600px;
+}
