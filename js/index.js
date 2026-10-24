@@ -2,7 +2,6 @@ const form = document.querySelector("#customer");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault(); // Stop the page from reloading
-
   const formData = new FormData(form); // Gather the data
   const dataObject = Object.fromEntries(formData.entries()); // Convert to object
 
@@ -11,34 +10,34 @@ form.addEventListener("submit", (e) => {
   let name = document.getElementById("name").value; //get the value of name input.
   msg.innerHTML = `Hi ${name} your message was recieved <span class="hide">Click to Hide<span>`; // this message get added to html paragraph
 
+  // for screen reader to not read message is hidden.
+  $(msg).show().attr("aria-hidden", "false");
   msg.classList.add("message");
+
   // Clear the form
-  clearFormManually();
+  clearFormManually(form);
   handleHide(msg);
 });
 
 //takes an element as param then removes
-// th style of display none:
+// the style of display none:
 function handleHide(element) {
   $("#success").on("click", function () {
-    $(this).hide();
+    $(this).hide(1000).attr("aria-hidden", "true");
   });
   element.removeAttribute("style");
 }
-// mManually clear allfield
+//CLEAR FORM
 // The form.reset() does not work on chrome brower
-function clearFormManually() {
-  document.getElementById("name").value = "";
-  document.getElementById("mail").value = "";
-  document.getElementById("msg").value = "";
-}
+// but to demostrate looping im using foreach in an array of input elements
+function clearFormManually(form) {
+  const inputs = form.querySelectorAll("input");
+  const textArea = form.querySelector("textarea");
 
-// Hide the success message when its link is clicked.
-// With the element initially shown, we can hide it slowly:
-// $(document).ready(function () {
-//   $(".message").on("click", function () {
-//     $("#success").hide(2000);
-//   });
-// });
-// This function validates input in the form
-// Displaying a message of success or failure.
+  const AllInputs = Array.from(inputs);
+  AllInputs.push(textArea);
+
+  AllInputs.forEach((element) => {
+    element.value = "";
+  });
+}
