@@ -82,3 +82,17 @@ form p label input textarea button {
   max-width: 800px;
   width: 600px;
 }
+
+input:invalid {
+  border: 2px solid red;
+  background-color: lightblue;
+}
+/* hide the message */
+.hide {
+  color: blue;
+}
+/* form validation */
+
+.message {
+  color: green;
+}

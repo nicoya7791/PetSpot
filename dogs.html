@@ -26,7 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
-  </head>
+ <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script> 
+</head>
   <!-- Curiosity: Experimented with Flexbox creating a fluid layout that fits small screen size;
     Connections:  the images cards are have a call to action to adopt a dog. 
     Creating Value: Fast, responsive gallery for visitors;
@@ -108,19 +109,23 @@
         </div>
       </section>
       <section class="formsection">
-        <form id="customer">
+        <form action="http://localhost:5000/" method="post" id="customer">
             <p>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" size="40" />
+                <input type="text" required id="name" name="user_name" size="40" />
             </p>
             <p>
                 <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" size="40" />
+                <input type="email" id="mail" required id="mail" name="user_email" size="40" />
             </p>
             <p>
                 <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message" cols="40"></textarea>
+                <textarea id="msg" required minlength="20" maxlength="500" name="user_message" cols="40"></textarea>
             </p> <br>
+            <div id="msg-div">
+                <p id="success"></p>
+            </div><br>
+
             <button type="submit">Send your message</button>
         </form>
       </section>
@@ -137,6 +142,9 @@
             <a href="About.html">About Us</a>
         </nav>
     </footer>
+
+    
     <script src="js/index.js"></script>
+
   </body>
 </html>
